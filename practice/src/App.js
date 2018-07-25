@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const fullnames = {
+	ryoma: '坂本龍馬',
+	taka: '西郷隆盛',
+	kai: '勝海舟'
+};
+const getFullname = nickname => fullnames[nickname];
+
 class App extends Component {
 	render() {
 		return (
@@ -13,6 +20,7 @@ class App extends Component {
 			<p className="App-intro">
 			To get started, edit <code>src/App.js</code> and save to reload.
 			</p>
+			<p>Hello,{getFullname('ryoma')}</p>
 			</div>
 		);
 	}
