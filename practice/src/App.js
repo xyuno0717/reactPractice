@@ -3,7 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 
 const Hello = () => {
-	return <div>こんにちは、坂本龍馬さん</div>;
+	return (
+	<React.Fragment>
+	<div>こんにちは</div>
+	<div>坂本龍馬さん</div>
+	</React.Fragment>
+	);
 }
 
 class App extends Component {
